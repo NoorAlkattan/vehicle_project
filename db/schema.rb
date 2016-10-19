@@ -11,6 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 20161019033819) do
 
   create_table "people", force: :cascade do |t|
@@ -18,6 +19,17 @@ ActiveRecord::Schema.define(version: 20161019033819) do
     t.string   "last_name"
     t.string   "email"
     t.integer  "date_of_birth"
+=======
+ActiveRecord::Schema.define(version: 20161019021727) do
+
+  create_table "vehicles", force: :cascade do |t|
+    t.string   "vin"
+    t.integer  "year"
+    t.string   "make"
+    t.string   "model"
+    t.string   "engine_type"
+    t.string   "license_plate"
+>>>>>>> vehicle_project
     t.datetime "created_at",    null: false
     t.datetime "updated_at",    null: false
   end
