@@ -15,12 +15,17 @@
     </tr>
   </thead>
 
+    
+     
+     <input type="text" name="firstname" placeholder="First name">
+  
   <tbody>
     <% @people.each do |person| %>
+    <form name="myForm" action="#" onsubmit="return validateForm()" method="post">
       <tr>
-        <td><%= person.first_name %></td>
-        <td><%= person.last_name %></td>
-        <td><%= person.email %></td>
+        <td><input type="text" name="firstname" placeholder="first name"><%= person.first_name %></td>
+        <td><input type="text" name="lastname" placeholder="Last name"><%= person.last_name %></td>
+        <td><input type="text" name="email" placeholder="email"><%= person.email %></td>
         <td><%= person.date_of_birth %></td>
         <td><%= link_to 'Show', person %></td>
         <td><%= link_to 'Edit', edit_person_path(person) %></td>

@@ -1,0 +1,85 @@
+Java Script
+
+var a=[4,10,9,18,20,2];
+
+i=0;
+
+var two=[];
+
+var three=[];
+
+var five=[];
+
+for (i=0; i<a.length ; i++){
+	
+if (a[i]%2 ===0){
+	
+two.push(a[i]);
+
+}
+
+
+  
+if (a[i]%3 ===0){
+  	
+three.push(a[i]);
+  
+}
+   
+if (a[i]%5 ===0){
+  
+five.push(a[i]);
+  
+}
+
+}
+  
+console.log (two);
+  
+console.log (three);
+  
+console.log (five);
+
+
+
+Ruby
+
+a=[4,10,9,18,20,2]
+
+i=0
+
+two=[]
+
+three=[]
+
+five=[]
+
+a.each do |element|
+	
+if (element%2 ==0)
+	
+two.push(element)
+
+
+end
+  
+if (element%3 ==0)
+  	
+three.push(element)
+  
+end
+  	
+ 
+if (element%5 ==0)
+  
+five.push(element)
+ 
+end
+ 
+end
+  
+puts(two)
+ 
+puts(three)
+  
+puts(five)

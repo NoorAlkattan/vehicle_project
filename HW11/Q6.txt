@@ -1,0 +1,1 @@
+the Applications folder does includes all files of  Ruby , HTML , CSS, Javascript 
