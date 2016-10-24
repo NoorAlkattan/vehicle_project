@@ -13,5 +13,31 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
-//= require_tree .
+//= require_tree 
 
+ function my_function(){
+   if(document.getElementById("person_first_name").value == ""){
+     alert("Type First Name");
+   }
+    return false;
+    
+ } 
+     return true;
+   
+ function my_function(){
+   if(document.getElementById("person_last_name").value == ""){
+     alert("Type last Name");
+   }
+    return false;
+    
+ } 
+  function my_function(){
+   if(document.getElementById("person_email").value == ""){
+     alert("Type email");
+   }
+    return false;
+    
+ } 
+    
+     
+   
